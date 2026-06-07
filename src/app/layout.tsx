@@ -5,18 +5,29 @@ import "./globals.css";
 const display = Playfair_Display({
   variable: "--font-heading",
   subsets: ["latin"],
-  weight: ["500", "600", "700"],
+  display: "swap",
 });
 
 const sans = DM_Sans({
   variable: "--font-body",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Barbería — Reservas",
-  description: "Reservá tu turno con el barbero que prefieras.",
+  title: "Estudio & Navaja | Reservas de Barbería 💈",
+  description: "Reservá tu turno con el barbero que prefieras. Agendá online de forma simple, rápida y sin esperas.",
+  openGraph: {
+    title: "Estudio & Navaja | Reservas de Barbería",
+    description: "Reservá tu turno con el barbero que prefieras de manera online en segundos.",
+    type: "website",
+    locale: "es_ES",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Estudio & Navaja | Reservas de Barbería",
+    description: "Reservá tu turno con el barbero que prefieras de manera online en segundos.",
+  },
 };
 
 export default function RootLayout({
